@@ -140,7 +140,7 @@ const setupStartBtn = () => {
         loadBtn.removeEventListener("click", start)
         startGame()
     }
-    loadBtn.textContent = "Start (1 min )"
+    loadBtn.textContent = "Start (1 min)"
     loadBtn.addEventListener("click", start)
 }
 
