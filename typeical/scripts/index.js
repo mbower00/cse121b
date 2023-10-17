@@ -1,3 +1,5 @@
+console.log("JS connected!")
+
 import {modalShadeEl, modalXEl, hideModal, showModal} from "./modal.js"
 import {getAnalysis} from "./analysis.js"
 const loadBtn = document.getElementById("load-btn")
