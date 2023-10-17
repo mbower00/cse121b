@@ -1,0 +1,169 @@
+/* copied from https://fonts.google.com/specimen/M+PLUS+Rounded+1c?query=rounded&stroke=Sans+Serif */
+  @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;800&display=swap');
+
+body {
+    margin: 0;
+    background-color: #fdfdfd;
+/* copied from https://fonts.google.com/specimen/M+PLUS+Rounded+1c?query=rounded&stroke=Sans+Serif */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #151d32;
+}
+nav {
+    background-color: #151d32;
+    padding: 10px 0px
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    font-size: 50px;
+    border-radius: 8px;
+    border: none;
+    color: #fdfdfd;
+    padding: 10px;
+    line-height: 50px;
+    background-color: #151d32;
+    /* copied from https://fonts.google.com/specimen/M+PLUS+Rounded+1c?query=rounded&stroke=Sans+Serif */
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        font-weight: 800;
+        
+}
+.next {
+    margin-top: 25px;
+}
+.text {
+    font-size: 50px;
+
+}
+.field {
+    margin-top: 30px;
+    width: 60%;
+    border-radius: 8px;
+    padding: 50px;
+    box-shadow: 2px 3px 10px #888;
+}
+.data {
+    border: 2px solid #151d32;
+    padding: 1px 2px;
+    border-radius: 8px;
+    
+    
+}
+.typing-input {
+    border: 2px dashed #151d32;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    width: 100%;
+/* copied from https://fonts.google.com/specimen/M+PLUS+Rounded+1c?query=rounded&stroke=Sans+Serif */
+font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.modal-shade {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.modal {
+    position: absolute;
+    width: 60%;
+    height: 90%;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    margin-top: 1.5%;
+    box-shadow: 2px 3px 10px #888;
+    cursor: default;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.hide {
+    display: none;
+}
+
+.left {
+    display: flex;
+    justify-content: end;
+}
+
+#modal-x {
+    color: #151d32;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    color: #fdfdfd;
+    background-color: #151d32;
+    font-weight: 800;
+    font-size: 40px;
+    border-radius: 8px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+h2 {
+    margin: 0 0 0 ;
+    color: #151d32;
+    /* color: #fe5069; */
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.analysis {
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.analysis-head {
+    color: #f8a858;
+}
+
+.correct-head {
+    color: #5cb3c6;
+}
+
+.incorrect-head {
+    color: #fd4f67;
+}
+
+.incorrect-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.correct-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.correct {
+    border-radius: 8px;
+    border: 2px solid #5cb3c6;
+    padding: 3px;
+    font-size: 24px;
+}
+
+.incorrect {
+    border-radius: 8px;
+    border: 2px solid #fd4f67;
+    padding: 3px;
+    font-size: 24px;
+}
