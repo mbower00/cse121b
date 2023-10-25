@@ -11,7 +11,7 @@ const getTrivia = async () => {
     // Fetch and return a trivia
     try {
         
-        const res = await fetch("http://numbersapi.com/random/trivia?json")
+        const res = await fetch("https://numbersapi.com/random/trivia?json")
     } catch (error) {
         console.log("there is an error with fetch()", error)
     }
