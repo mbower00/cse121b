@@ -8,6 +8,7 @@ const TIME = 60000
 
 
 const getTrivia = async () => {
+    console.log('sending fetch request...');
     // Fetch and return a trivia
     try {
         
