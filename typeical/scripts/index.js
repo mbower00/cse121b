@@ -8,21 +8,10 @@ const TIME = 60000
 
 
 const getTrivia = async () => {
-    console.log('sending fetch request...');
+    console.log('sending fetch request to uselessfacts...');
     // Fetch and return a trivia
-    try {
-        
-        const res = await fetch("https://uselessfacts.jsph.pl/api/v2/facts/random")
-    } catch (error) {
-        console.log("there is an error with fetch()", error)
-    }
-    try {
-        
-        const trivia = await res.json()
-    } catch (error) {
-        console.log("there is an error with json()", error)
-        
-    }
+    const res = await fetch("https://uselessfacts.jsph.pl/api/v2/facts/random")
+    const trivia = await res.json()
     return trivia.text
 }
 
