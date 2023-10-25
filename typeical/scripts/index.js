@@ -9,8 +9,19 @@ const TIME = 60000
 
 const getTrivia = async () => {
     // Fetch and return a trivia
-    const res = await fetch("http://numbersapi.com/random/trivia?json")
-    const trivia = await res.json()
+    try {
+        
+        const res = await fetch("http://numbersapi.com/random/trivia?json")
+    } catch (error) {
+        console.log("there is an error with fetch()", error)
+    }
+    try {
+        
+        const trivia = await res.json()
+    } catch (error) {
+        console.log("there is an error with json()", error)
+        
+    }
     return trivia.text
 }
 
